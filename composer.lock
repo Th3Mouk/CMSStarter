@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "21b34f16d3e46ef5f6c5a6c00f23cf70",
+    "hash": "dd18e1c0eb794d02900c4a8a28009562",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -4381,16 +4381,16 @@
         },
         {
             "name": "th3mouk/cms-core-bundle",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Th3Mouk/CMSCoreBundle.git",
-                "reference": "0cb2ca0d2030ad535448f13e26dfd6b8a2a481b5"
+                "reference": "592f87520007b6be9ce32ce7bbc7c89027f578ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Th3Mouk/CMSCoreBundle/zipball/0cb2ca0d2030ad535448f13e26dfd6b8a2a481b5",
-                "reference": "0cb2ca0d2030ad535448f13e26dfd6b8a2a481b5",
+                "url": "https://api.github.com/repos/Th3Mouk/CMSCoreBundle/zipball/592f87520007b6be9ce32ce7bbc7c89027f578ab",
+                "reference": "592f87520007b6be9ce32ce7bbc7c89027f578ab",
                 "shasum": ""
             },
             "require": {
@@ -4408,7 +4408,7 @@
                 "sonata-project/notification-bundle": "~2.3",
                 "sonata-project/seo-bundle": "~1.1",
                 "stof/doctrine-extensions-bundle": "~1.1",
-                "th3mouk/cms-page-bundle": "~1.0",
+                "th3mouk/cms-page-bundle": "~1.0.0",
                 "th3mouk/cms-user-bundle": "~2.3@dev",
                 "willdurand/faker-bundle": "~1.2"
             },
@@ -4439,26 +4439,26 @@
                 "core",
                 "sonata"
             ],
-            "time": "2015-03-13 16:58:13"
+            "time": "2015-03-13 17:43:18"
         },
         {
             "name": "th3mouk/cms-page-bundle",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Th3Mouk/CMSPageBundle.git",
-                "reference": "5b5215f3a50d2bbbd9b0801fa3b84fad6ad012b7"
+                "reference": "d9ae6a7e876c7d66ca32be0449e6b3d9bed58630"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Th3Mouk/CMSPageBundle/zipball/5b5215f3a50d2bbbd9b0801fa3b84fad6ad012b7",
-                "reference": "5b5215f3a50d2bbbd9b0801fa3b84fad6ad012b7",
+                "url": "https://api.github.com/repos/Th3Mouk/CMSPageBundle/zipball/d9ae6a7e876c7d66ca32be0449e6b3d9bed58630",
+                "reference": "d9ae6a7e876c7d66ca32be0449e6b3d9bed58630",
                 "shasum": ""
             },
             "require": {
                 "sonata-project/datagrid-bundle": "2.2.*@dev",
                 "sonata-project/page-bundle": "~2.3",
-                "th3mouk/cms-core-bundle": "~1.0"
+                "th3mouk/cms-core-bundle": "~1.0.0"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -4487,7 +4487,7 @@
                 "page",
                 "sonata"
             ],
-            "time": "2015-03-13 16:53:49"
+            "time": "2015-03-13 17:44:03"
         },
         {
             "name": "th3mouk/cms-user-bundle",
