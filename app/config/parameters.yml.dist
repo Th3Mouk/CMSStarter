@@ -20,3 +20,5 @@ parameters:
 
     title_project:     CMS Starter
     logo_project:      bundles/sonataadmin/logo_title.png
+
+    pixlr_secret:      TheSuperSecretHash

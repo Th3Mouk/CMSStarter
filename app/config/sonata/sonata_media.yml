@@ -28,7 +28,7 @@ sonata_media:
             create:     false
     pixlr:
         enabled:  true
-        secret:   theSecretHash
+        secret:   %pixlr_secret%
         referrer: CMS Starter
     providers:
         image:
