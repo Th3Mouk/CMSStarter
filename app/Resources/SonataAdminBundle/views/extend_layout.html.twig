@@ -1,0 +1,9 @@
+{% extends 'SonataAdminBundle::standard_layout.html.twig' %}
+
+{% block side_bar_after_nav %}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('/bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/src/js/locales/bootstrap-datetimepicker.fr.js') }}"></script>
+{% endblock %}

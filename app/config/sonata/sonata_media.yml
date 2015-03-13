@@ -1,0 +1,54 @@
+sonata_media:
+    # if you don't use default namespace configuration
+    #class:
+    #    media: MyVendor\MediaBundle\Entity\Media
+    #    gallery: MyVendor\MediaBundle\Entity\Gallery
+    #    gallery_has_media: MyVendor\MediaBundle\Entity\GalleryHasMedia
+    default_context: contenu
+    db_driver: doctrine_orm # or doctrine_mongodb, doctrine_phpcr
+    contexts:
+        contenu:
+            providers:
+                - sonata.media.provider.dailymotion
+                - sonata.media.provider.youtube
+                - sonata.media.provider.image
+                - sonata.media.provider.file
+
+            formats:
+                small: { width: 500 , quality: 70}
+                big:   { width: 800 , quality: 70}
+
+    cdn:
+        server:
+            path: /uploads/media # http://media.sonata-project.org/
+
+    filesystem:
+        local:
+            directory:  %kernel.root_dir%/../web/uploads/media
+            create:     false
+    pixlr:
+        enabled:  true
+        secret:   theSecretHash
+        referrer: CMS Starter
+    providers:
+        image:
+            thumbnail:  sonata.media.thumbnail.consumer.format
+        vimeo:
+            thumbnail:  sonata.media.thumbnail.consumer.format
+        youtube:
+            thumbnail:  sonata.media.thumbnail.consumer.format
+        dailymotion:
+            thumbnail:  sonata.media.thumbnail.consumer.format
+
+liip_imagine:
+    filter_sets:
+        default_small:
+            quality: 75
+            filters:
+                thumbnail: { size: [100, 70], mode: outbound }
+
+
+        default_big:
+            quality: 75
+            filters:
+                thumbnail: { size: [500, 70], mode: outbound }
