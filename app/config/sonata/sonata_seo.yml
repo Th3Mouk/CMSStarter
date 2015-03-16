@@ -1,7 +1,7 @@
 sonata_seo:
-    default:          sonata.seo.page.default
     encoding:         UTF-8
     page:
+        default:          sonata.seo.page.default
         title:            %title_project%
         metas:
             name:

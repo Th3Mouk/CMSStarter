@@ -72,9 +72,9 @@ sonata_page:
 
     assets:
         stylesheets:
-#            - 'bundles/sonataadmin/vendor/bootstrap/dist/css/bootstrap.min.css'
 #            - 'bundles/sonatapage/default.css'
-#            - 'bundles/sonatapage/page.css'
+#            - 'bundles/sonataadmin/vendor/bootstrap/dist/css/bootstrap.min.css'
+            - 'bundles/sonatapage/sonata-page.front.css'
             - 'css/style.css'
             - 'css/magnific-popup.css'
             - 'css/jquery-ui.min.css'
@@ -82,8 +82,8 @@ sonata_page:
             - 'css/font-awesome.min.css'
         javascripts:
 #            - 'bundles/sonataadmin/vendor/jquery/dist/jquery.min.js'
-#            - 'bundles/sonataadmin/vendor/jqueryui/ui/minified/jquery-ui.min.js'
-#            - 'bundles/sonataadmin/vendor/jqueryui/ui/minified/i18n/jquery-ui-i18n.min.js'
+#            - 'bundles/sonataadmin/vendor/bootstrap/dist/js/bootstrap.min.js'
+            - 'bundles/sonatapage/sonata-page.front.js'
             - 'js/jquery.min.js'
             - 'js/jquery-ui.min.js'
             - 'js/bootstrap.min.js'
