@@ -25,5 +25,4 @@ use Th3Mouk\CMSPageBundle\Entity\BasePageRepository;
  */
 class PageRepository extends BasePageRepository
 {
-
 }

@@ -982,7 +982,7 @@ CONTENT
         $global->addBlocks($footer = $blockInteractor->createNewContainer(array(
             'enabled' => true,
             'page'    => $global,
-            'code'    => 'footer'
+            'code'    => 'footer',
         ), function ($container) {
             $container->setSetting('layout', '<div class="row page-footer well">{{ CONTENT }}</div>');
         }));
@@ -993,7 +993,7 @@ CONTENT
         $footer->addChildren($footerLeft = $blockInteractor->createNewContainer(array(
             'enabled' => true,
             'page'    => $global,
-            'code'    => 'content'
+            'code'    => 'content',
         ), function ($container) {
             $container->setSetting('layout', '<div class="col-sm-3">{{ CONTENT }}</div>');
         }));
@@ -1009,7 +1009,7 @@ CONTENT
         $footer->addChildren($footerLinksCenter = $blockInteractor->createNewContainer(array(
             'enabled' => true,
             'page'    => $global,
-            'code'    => 'content'
+            'code'    => 'content',
         ), function ($container) {
             $container->setSetting('layout', '<div class="col-sm-2">{{ CONTENT }}</div>');
         }));
@@ -1017,7 +1017,7 @@ CONTENT
         $footer->addChildren($footerLinksRight = $blockInteractor->createNewContainer(array(
             'enabled' => true,
             'page'    => $global,
-            'code'    => 'content'
+            'code'    => 'content',
         ), function ($container) {
             $container->setSetting('layout', '<div class="col-sm-2">{{ CONTENT }}</div>');
         }));
@@ -1145,7 +1145,6 @@ CONTENT
         $text->setEnabled(true);
         $text->setPage($homepage);
 
-
         $homepage->addBlocks($content = $blockInteractor->createNewContainer(array(
             'enabled' => true,
             'page' => $homepage,
@@ -1217,7 +1216,6 @@ CONTENT
 //
 //        $pageManager->save($homepage);
     }
-
 
     /**
      * Creates page all temoignages
