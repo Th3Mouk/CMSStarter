@@ -22,12 +22,20 @@ class AppKernel extends Kernel
 
             // Sonata Core
             new Sonata\CoreBundle\SonataCoreBundle(),
+            new Sonata\AdminBundle\SonataAdminBundle(),
+            new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
             new Sonata\BlockBundle\SonataBlockBundle(),
             new Application\Sonata\BlockBundle\ApplicationSonataBlockBundle(),
-            new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
-            new Sonata\AdminBundle\SonataAdminBundle(),
-            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+            new Sonata\IntlBundle\SonataIntlBundle(),
+            new Sonata\SeoBundle\SonataSeoBundle(),
+            new Sonata\CacheBundle\SonataCacheBundle(),
+            new Sonata\NotificationBundle\SonataNotificationBundle(),
+            new Application\Sonata\NotificationBundle\ApplicationSonataNotificationBundle(),
             new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+
+            // CMF Integration
+            new Symfony\Cmf\Bundle\RoutingBundle\CmfRoutingBundle(),
 
             // Sonata User
             new FOS\UserBundle\FOSUserBundle(),
@@ -35,12 +43,7 @@ class AppKernel extends Kernel
             new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
 
             // Sonata Page
-            new Sonata\CacheBundle\SonataCacheBundle(),
-            new Sonata\NotificationBundle\SonataNotificationBundle(),
-            new Application\Sonata\NotificationBundle\ApplicationSonataNotificationBundle(),
-            new Sonata\SeoBundle\SonataSeoBundle(),
             new Sonata\PageBundle\SonataPageBundle(),
-            new Symfony\Cmf\Bundle\RoutingBundle\CmfRoutingBundle(),
 
             // Sonata Formatter
             new Knp\Bundle\MarkdownBundle\KnpMarkdownBundle(),
@@ -51,14 +54,18 @@ class AppKernel extends Kernel
             new Sonata\MediaBundle\SonataMediaBundle(),
             new Application\Sonata\MediaBundle\ApplicationSonataMediaBundle(),
             new JMS\SerializerBundle\JMSSerializerBundle(),
-            new Sonata\IntlBundle\SonataIntlBundle(),
             new Liip\ImagineBundle\LiipImagineBundle(),
 
             // Fixtures
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
+            new Bazinga\Bundle\FakerBundle\BazingaFakerBundle(),
 
+            //Doctrine Extension
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
-            new \Bazinga\Bundle\FakerBundle\BazingaFakerBundle(),
+
+            // API
+            new FOS\RestBundle\FOSRestBundle(),
+            new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
 
             //CMS Starter
             new Th3Mouk\CMSCoreBundle\Th3MoukCMSCoreBundle(),
