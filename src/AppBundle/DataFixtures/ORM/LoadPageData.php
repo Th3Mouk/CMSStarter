@@ -1091,7 +1091,7 @@ CONTENT
         $homepage->setSlug('/');
         $homepage->setUrl('/');
         $homepage->setName('Home');
-        $homepage->setTitle('Homepage');
+        $homepage->setTitle($this->container->getParameter('title_project'));
         $homepage->setEnabled(true);
         $homepage->setDecorate(0);
         $homepage->setRequestMethod('GET|POST|HEAD|DELETE|PUT');
