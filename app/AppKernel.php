@@ -67,6 +67,9 @@ class AppKernel extends Kernel
             new FOS\RestBundle\FOSRestBundle(),
             new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
 
+            // Menu
+            new Id4v\Bundle\MenuBundle\Id4vMenuBundle(),
+
             //CMS Starter
             new Th3Mouk\CMSCoreBundle\Th3MoukCMSCoreBundle(),
             new Th3Mouk\CMSPageBundle\Th3MoukCMSPageBundle(),

@@ -12,10 +12,10 @@ sonata_admin:
                 icon:            '<i class="fa fa-sitemap"></i>'
                 items:
                     - sonata.page.admin.page
+                    - id4v_menu.admin.menu
                     - sonata.media.admin.media
                     - sonata.media.admin.gallery
                 roles: [ ROLE_ADMIN ]
-
 
             sonata.admin.group.administration:
                 label:           sonata_administration
