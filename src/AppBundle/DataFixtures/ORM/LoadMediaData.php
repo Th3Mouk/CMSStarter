@@ -45,7 +45,7 @@ class LoadMediaData extends AbstractFixture implements ContainerAwareInterface, 
 
     public function load(ObjectManager $manager)
     {
-//        $gallery = $this->getGalleryManager()->create();
+        //        $gallery = $this->getGalleryManager()->create();
 //
 //        $manager = $this->getMediaManager();
 //
@@ -79,9 +79,8 @@ class LoadMediaData extends AbstractFixture implements ContainerAwareInterface, 
     }
 
     /**
-     * @param  \Sonata\MediaBundle\Model\GalleryInterface $gallery
-     * @param  \Sonata\MediaBundle\Model\MediaInterface   $media
-     * @return void
+     * @param \Sonata\MediaBundle\Model\GalleryInterface $gallery
+     * @param \Sonata\MediaBundle\Model\MediaInterface   $media
      */
     public function addMedia(GalleryInterface $gallery, MediaInterface $media)
     {

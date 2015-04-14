@@ -1,9 +1,10 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: Jeremy
  * Date: 29/01/15
- * Time: 16:54
+ * Time: 16:54.
  */
 
 namespace AppBundle\DataFixtures\ORM;
@@ -42,48 +43,48 @@ class LoadMenuData extends AbstractFixture implements ContainerAwareInterface, O
     public function load(ObjectManager $manager)
     {
         $menu = new Menu();
-        $menu->setName("Menu");
-        $menu->setSlug("menu");
+        $menu->setName('Menu');
+        $menu->setSlug('menu');
 
         $menu->addItem($first = new MenuItem());
         $first->setActive(true);
-        $first->setTitle("First");
-        $first->setUrl("/");
+        $first->setTitle('First');
+        $first->setUrl('/');
 
         $first->addChild($chill = new MenuItem());
         $chill->setActive(true);
-        $chill->setTitle("Chill First");
-        $chill->setUrl("/");
+        $chill->setTitle('Chill First');
+        $chill->setUrl('/');
 
         $chill->addChild($chilly = new MenuItem());
         $chilly->setActive(true);
-        $chilly->setTitle("Chilly First");
-        $chilly->setUrl("/");
+        $chilly->setTitle('Chilly First');
+        $chilly->setUrl('/');
 
         $first->addChild($chill = new MenuItem());
         $chill->setActive(true);
-        $chill->setTitle("Chill Second");
-        $chill->setUrl("/");
+        $chill->setTitle('Chill Second');
+        $chill->setUrl('/');
 
         $first->addChild($chill = new MenuItem());
         $chill->setActive(true);
-        $chill->setTitle("Chill Third");
-        $chill->setUrl("/");
+        $chill->setTitle('Chill Third');
+        $chill->setUrl('/');
 
         $menu->addItem($second = new MenuItem());
         $second->setActive(true);
-        $second->setTitle("Second");
-        $second->setUrl("/");
+        $second->setTitle('Second');
+        $second->setUrl('/');
 
         $menu->addItem($third = new MenuItem());
         $third->setActive(true);
-        $third->setTitle("Third");
-        $third->setUrl("/");
+        $third->setTitle('Third');
+        $third->setUrl('/');
 
         $menu->addItem($fourth = new MenuItem());
         $fourth->setActive(true);
-        $fourth->setTitle("Fourth");
-        $fourth->setUrl("/");
+        $fourth->setTitle('Fourth');
+        $fourth->setUrl('/');
 
         $manager->persist($menu);
         $manager->flush();

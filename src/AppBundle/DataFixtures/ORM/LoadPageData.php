@@ -1,9 +1,10 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: Jeremy
  * Date: 28/01/15
- * Time: 17:14
+ * Time: 17:14.
  */
 
 namespace AppBundle\DataFixtures\ORM;
@@ -80,7 +81,7 @@ class LoadPageData extends AbstractFixture implements ContainerAwareInterface, O
         $site->setName('CMS Starter');
         $site->setEnabledFrom(new \DateTime('now'));
         $site->setEnabledTo(new \DateTime('+10 years'));
-        $site->setRelativePath("");
+        $site->setRelativePath('');
         $site->setIsDefault(true);
 
         $this->getSiteManager()->save($site);
@@ -97,7 +98,7 @@ class LoadPageData extends AbstractFixture implements ContainerAwareInterface, O
         $site->setName('Sub Site');
         $site->setEnabledFrom(new \DateTime('now'));
         $site->setEnabledTo(new \DateTime('+10 years'));
-        $site->setRelativePath("/sub-site");
+        $site->setRelativePath('/sub-site');
         $site->setIsDefault(false);
 
         $this->getSiteManager()->save($site);
@@ -436,11 +437,9 @@ CONTENT
     }
 
     /**
-     * Creates the "Who we are" content page (link available in footer)
+     * Creates the "Who we are" content page (link available in footer).
      *
      * @param SiteInterface $site
-     *
-     * @return void
      */
     public function createWhoWeArePage(SiteInterface $site)
     {
@@ -453,11 +452,9 @@ CONTENT
     }
 
     /**
-     * Creates the "Client testimonials" content page (link available in footer)
+     * Creates the "Client testimonials" content page (link available in footer).
      *
      * @param SiteInterface $site
-     *
-     * @return void
      */
     public function createClientTestimonialsPage(SiteInterface $site)
     {
@@ -470,11 +467,9 @@ CONTENT
     }
 
     /**
-     * Creates the "Press" content page (link available in footer)
+     * Creates the "Press" content page (link available in footer).
      *
      * @param SiteInterface $site
-     *
-     * @return void
      */
     public function createPressPage(SiteInterface $site)
     {
@@ -487,11 +482,9 @@ CONTENT
     }
 
     /**
-     * Creates the "FAQ" content page (link available in footer)
+     * Creates the "FAQ" content page (link available in footer).
      *
      * @param SiteInterface $site
-     *
-     * @return void
      */
     public function createFAQPage(SiteInterface $site)
     {
@@ -504,11 +497,9 @@ CONTENT
     }
 
     /**
-     * Creates the "Contact us" content page (link available in footer)
+     * Creates the "Contact us" content page (link available in footer).
      *
      * @param SiteInterface $site
-     *
-     * @return void
      */
     public function createContactUsPage(SiteInterface $site)
     {
@@ -767,14 +758,12 @@ CONTENT
     }
 
     /**
-     * Creates simple content pages
+     * Creates simple content pages.
      *
      * @param SiteInterface $site    A Site entity instance
      * @param string        $url     A page URL
      * @param string        $title   A page title
      * @param string        $content A text content
-     *
-     * @return void
      */
     public function createTextContentPage(SiteInterface $site, $url, $title, $content)
     {
@@ -1218,11 +1207,9 @@ CONTENT
     }
 
     /**
-     * Creates page all temoignages
+     * Creates page all temoignages.
      *
      * @param SiteInterface $site A Site entity instance
-     *
-     * @return void
      */
     public function createTemoignagesPage(SiteInterface $site)
     {
@@ -1267,17 +1254,15 @@ CONTENT
     }
 
     /**
-     * Creates simple content pages
+     * Creates simple content pages.
      *
      * @param SiteInterface $site      A Site entity instance
      * @param string        $url       A page URL
      * @param string        $title     A page title
-     * @param boolean       $directory This is a folder for page (non clickable menu)
-     * @param boolean       $menu      The page do appear in the menu
+     * @param bool          $directory This is a folder for page (non clickable menu)
+     * @param bool          $menu      The page do appear in the menu
      * @param string        $parent    The reference of parent page
      * @param string        $content   A text content
-     *
-     * @return void
      */
     public function createTextSiraPage(SiteInterface $site, $url, $title, $directory, $menu, $parent, $color, $content)
     {

@@ -35,7 +35,7 @@ class LoadGroupData extends AbstractFixture implements FixtureInterface, Ordered
     }
 
     /**
-     * Load data fixtures with the passed EntityManager
+     * Load data fixtures with the passed EntityManager.
      *
      * @param Doctrine\Common\Persistence\ObjectManager $manager
      */
