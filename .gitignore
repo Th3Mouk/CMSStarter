@@ -44,3 +44,7 @@
 # Grunt/Bower
 /node_modules/
 /bower/
+
+# Composer.json.*
+composer.json.dev
+composer.json.prod
