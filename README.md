@@ -1,4 +1,4 @@
-CMSStarter
+CMS Starter
 ==========
 
 Project ready to deploy, based on the top of [Symfony2][2] and [Sonata Project][1] using Th3Mouk extends bundle.
@@ -27,7 +27,6 @@ $ composer create-project th3mouk/cms-starter my_project_name
 Composer will install the project and his dependencies.
 
 __The project is now deployed in your folder.__
-
 
 
 ### Load Fixtures Datas
@@ -61,6 +60,18 @@ Your project is now fully installed, and functional.
 
 
 ## Extend me
+
+### Bundle pack
+
+A fix, a feature, typo or missing docs ?
+
+Submit it and be part of CMS Starter !
+
+This project use:
+
+* [CMSCoreBundle](https://github.com/Th3Mouk/CMSCoreBundle) (The core provide default configuration of CMS and basic dependencies)
+* [CMSPageBundle](https://github.com/Th3Mouk/CMSPageBundle) (Extend of [SonataPageBundle](https://github.com/sonata-project/SonataPageBundle))
+* [Id4vMenuBundle](https://github.com/Id4v/MenuBundle) (Manageable and customizable menu)
 
 
 ### Install Grunt modules
@@ -96,7 +107,6 @@ __Beware__
 This operation overwritte the `web/css/style.css` file.
 
 You need to modify `Gruntfile.js` or LESS files in `app/Resources/public/less` to adapt behaviors on your need.
-
 
 [1]:  https://sonata-project.org/
 [2]:  http://symfony.com/
