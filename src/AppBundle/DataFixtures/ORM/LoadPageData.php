@@ -55,7 +55,7 @@ class LoadPageData extends AbstractFixture implements ContainerAwareInterface, O
 //        $this->createBasketPage($site);
 //        $this->createTermsPage($site);
         $this->createUserPage($site);
-        $this->createApiPage($site);
+        $this->createTh3moukPage($site);
         $this->createLegalNotesPage($site);
 
         // Create footer pages
@@ -78,7 +78,7 @@ class LoadPageData extends AbstractFixture implements ContainerAwareInterface, O
 
         $site->setHost('localhost');
         $site->setEnabled(true);
-        $site->setName('CMS Starter');
+        $site->setName($this->container->getParameter('title_project'));
         $site->setEnabledFrom(new \DateTime('now'));
         $site->setEnabledTo(new \DateTime('+10 years'));
         $site->setRelativePath('');
@@ -373,25 +373,11 @@ CONTENT
     /**
      * @param SiteInterface $site
      */
-    public function createApiPage(SiteInterface $site)
+    public function createTh3moukPage(SiteInterface $site)
     {
-        $this->createTextContentPage($site, 'api-landing', 'API', <<<CONTENT
+        $this->createTextContentPage($site, 'th3mouk', 'Th3Mouk', <<<CONTENT
 <div>
-
-    <h1>Available account</h1>
-    You can connect to the <a href="/api/doc">api documentation</a> by using the following account:<br>
-
-    <ul>
-        <li> Login - <strong>admin</strong></li>
-        <li> Password - <strong>admin</strong></li>
-    </ul>
-
-    <br />
-    <br />
-    <center>
-        <img src="/bundles/sonatademo/images/api.png" class="img-rounded" />
-    </center>
-
+    You can retrieve all my bundles here -> <a href="https://github.com/Th3Mouk" target="_blank">Github</a>
 </div>
 
 CONTENT
@@ -916,7 +902,7 @@ CONTENT
         $header->addChildren($text = $blockManager->create());
 
         $text->setType('sonata.block.service.text');
-        $text->setSetting('content', '<h2><a href="/">CMS Starter</a></h2>');
+        $text->setSetting('content', '<h2><a href="/">'.$this->container->getParameter('title_project').'</a></h2>');
         $text->setPosition(1);
         $text->setEnabled(true);
         $text->setPage($global);
@@ -1015,7 +1001,7 @@ CONTENT
         $footerLeft->addChildren($text = $blockManager->create());
 
         $text->setType('sonata.block.service.text');
-        $text->setSetting('content', '<h2>CMS Starter</h2><p class="handcraft">HANDCRAFTED IN CLERMONT-FD<br />WITH MIXED HERITAGE</p><p><a href="http://twitter.com/sonataproject" target="_blank">Follow Sonata on Twitter</a></p>');
+        $text->setSetting('content', '<h2>'.$this->container->getParameter('title_project').'</h2><p class="handcraft">HANDCRAFTED IN CLERMONT-FD<br />WITH MIXED HERITAGE</p><p><a href="http://twitter.com/sonataproject" target="_blank">Follow Sonata on Twitter</a></p>');
 
         $text->setPosition(1);
         $text->setEnabled(true);
@@ -1028,8 +1014,8 @@ CONTENT
         $text->setSetting('content', <<<CONTENT
 <h4>PRODUCT</h4>
 <ul class="links">
-    <li><a href="/bundles">Sonata</a></li>
-    <li><a href="/api-landing">API</a></li>
+    <li><a href="http://www.github.com/sonata-project" target="_blank">Sonata</a></li>
+    <li><a href="/th3mouk">Th3Mouk</a></li>
     <li><a href="/faq">FAQ</a></li>
 </ul>
 CONTENT
@@ -1048,7 +1034,6 @@ CONTENT
 <ul class="links">
     <li><a href="http://www.sonata-project.org/about" target="_blank">About Sonata</a></li>
     <li><a href="/legal-notes">Legal notes</a></li>
-    <li><a href="/shop/payment/terms-and-conditions">Terms</a></li>
 </ul>
 CONTENT
         );
@@ -1064,7 +1049,6 @@ CONTENT
         $text->setSetting('content', <<<CONTENT
 <h4>COMMUNITY</h4>
 <ul class="links">
-    <li><a href="/blog">Blog</a></li>
     <li><a href="http://www.github.com/sonata-project" target="_blank">Github</a></li>
     <li><a href="/contact-us">Contact us</a></li>
 </ul>
@@ -1090,8 +1074,9 @@ CONTENT
         $this->addReference('page-homepage', $homepage = $pageManager->create());
         $homepage->setSlug('/');
         $homepage->setUrl('/');
-        $homepage->setName('Home');
+        $homepage->setName('Accueil');
         $homepage->setTitle($this->container->getParameter('title_project'));
+        $homepage->setPageAlias('accueil');
         $homepage->setEnabled(true);
         $homepage->setDecorate(0);
         $homepage->setRequestMethod('GET|POST|HEAD|DELETE|PUT');
@@ -1119,7 +1104,7 @@ CONTENT
 <div class="col-md-3 welcome"><h2>Welcome</h2></div>
 <div class="col-md-9">
     <p>
-        This page is a demo of the CMS Starter on top of Sonata Sandbox available on <a href="https://github.com/sonata-project/sandbox">github</a>.
+        This page is a demo of the CMS Starter on top of Sonata Sandbox available on <a href="https://github.com/sonata-project/sandbox" target="_blank">github</a>.
         This demo try to be interactive so you will be able to found out the different features provided by the Sonata's Bundle.
     </p>
 
