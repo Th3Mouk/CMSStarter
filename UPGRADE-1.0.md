@@ -1,6 +1,8 @@
 UPGRADE 1.0
 ===============
 
+## The simpliest way to apply the following patchs, is to take the various changes through the commits on this repo
+
 ## 1.0.1
 
 ### __Composer Updated__
@@ -53,3 +55,29 @@ Modifying fixtures :
 
 * [6e122b4](https://github.com/Th3Mouk/CMSStarter/commit/6e122b4de209b3054eb62e088e3e8ad543b01d56)
 * [2ff405a](https://github.com/Th3Mouk/CMSStarter/commit/2ff405a1259b843533ba806d6de490a87c76464d)
+
+## 1.0.6
+
+### __Composer Updated__
+
+### __Dependencies__
+
+Remove the [SonataFormatterBundle](https://sonata-project.org/bundles/formatter/master/doc/index.html) cause he was unused in favore of [IvoryCKEditorBundle](https://github.com/egeloen/IvoryCKEditorBundle)
+``` php
+# Delete this in AppKernel.php
+new Knp\Bundle\MarkdownBundle\KnpMarkdownBundle(),
+new Sonata\FormatterBundle\SonataFormatterBundle(),
+```
+
+### __Configuration__
+
+The configuration of IvoryCKEditorBundle no longer part of default Core configuration, to leave it simply accessed.
+
+``` yaml
+# Add this line in app/config/config.yml
+ - { resource: @Th3MoukCMSCoreBundle/Resources/config/bundles/ivory_ckeditor.yml }
+```
+
+### __Graphic__
+
+Modification of the Super Admin Block
