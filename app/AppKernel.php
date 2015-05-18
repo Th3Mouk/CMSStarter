@@ -45,10 +45,8 @@ class AppKernel extends Kernel
             // Sonata Page
             new Sonata\PageBundle\SonataPageBundle(),
 
-            // Sonata Formatter
-            new Knp\Bundle\MarkdownBundle\KnpMarkdownBundle(),
+            // CKEditor
             new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
-            new Sonata\FormatterBundle\SonataFormatterBundle(),
 
             // Sonata Media
             new Sonata\MediaBundle\SonataMediaBundle(),
@@ -60,7 +58,7 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
             new Bazinga\Bundle\FakerBundle\BazingaFakerBundle(),
 
-            //Doctrine Extension
+            // Doctrine Extension
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
 
             // API
@@ -70,7 +68,7 @@ class AppKernel extends Kernel
             // Menu
             new Id4v\Bundle\MenuBundle\Id4vMenuBundle(),
 
-            //CMS Starter
+            // CMS Starter
             new Th3Mouk\CMSCoreBundle\Th3MoukCMSCoreBundle(),
             new Th3Mouk\CMSPageBundle\Th3MoukCMSPageBundle(),
             new Application\Th3Mouk\CMSPageBundle\ApplicationTh3MoukCMSPageBundle(),
