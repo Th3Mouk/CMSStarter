@@ -27,9 +27,9 @@ sonata_admin:
                 roles: [ ROLE_ADMIN ]
 
             sonata.admin.group.administration.super:
-                label:           sonata_administration
+                label:           Super Administration
                 label_catalogue: SonataAdminBundle
-                icon:            '<i class="fa fa-group"></i>'
+                icon:            '<i class="fa fa-globe"></i>'
                 items:
                     - sonata.page.admin.site
                 roles: [ ROLE_ADMIN ]
