@@ -58,6 +58,11 @@ __That's all folks !__
 
 Your project is now fully installed, and functional.
 
+## Configuration
+
+### CKEditor
+
+A default configuration with SonataMedia exists in `app/config/config.yml`, delete it to implement your own, like with [FMElfinderBundle](https://github.com/helios-ag/FMElfinderBundle#ckeditor-integration) integration.
 
 ## Extend me
 
