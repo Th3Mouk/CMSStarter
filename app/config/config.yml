@@ -7,6 +7,7 @@ imports:
 
     # Sonata CMS Include Default Conf
     - { resource: @Th3MoukCMSCoreBundle/Resources/config/config.yml }
+    - { resource: @Th3MoukCMSCoreBundle/Resources/config/bundles/ivory_ckeditor.yml }
 
     # Sonata Core Bundles
     - { resource: sonata/sonata_block.yml }
