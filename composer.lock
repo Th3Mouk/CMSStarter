@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "66b468a7c44040132b0a1ca339c0bf15",
+    "hash": "0cf7289eaf72a3c269e338f81d88d995",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -2888,16 +2888,16 @@
         },
         {
             "name": "sonata-project/cache",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/cache.git",
-                "reference": "0d2956070d31a1e6d3504b0671ffeb76818b0676"
+                "reference": "a1522be3a1874c4646e7f9aaea6ca973b8bcbcde"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/cache/zipball/0d2956070d31a1e6d3504b0671ffeb76818b0676",
-                "reference": "0d2956070d31a1e6d3504b0671ffeb76818b0676",
+                "url": "https://api.github.com/repos/sonata-project/cache/zipball/a1522be3a1874c4646e7f9aaea6ca973b8bcbcde",
+                "reference": "a1522be3a1874c4646e7f9aaea6ca973b8bcbcde",
                 "shasum": ""
             },
             "require-dev": {
@@ -2945,24 +2945,25 @@
                 "mongodb",
                 "redis"
             ],
-            "time": "2015-03-21 08:32:46"
+            "time": "2015-05-18 12:12:33"
         },
         {
             "name": "sonata-project/cache-bundle",
-            "version": "2.2.0",
+            "version": "2.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataCacheBundle.git",
-                "reference": "b815c6896513af3e7c2793743f5ea0e8dfba65c9"
+                "reference": "cb3af3a201bc6bd46138e39947479212e8878e36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataCacheBundle/zipball/b815c6896513af3e7c2793743f5ea0e8dfba65c9",
-                "reference": "b815c6896513af3e7c2793743f5ea0e8dfba65c9",
+                "url": "https://api.github.com/repos/sonata-project/SonataCacheBundle/zipball/cb3af3a201bc6bd46138e39947479212e8878e36",
+                "reference": "cb3af3a201bc6bd46138e39947479212e8878e36",
                 "shasum": ""
             },
             "require": {
                 "sonata-project/cache": "~1.0",
+                "symfony/config": "~2.2",
                 "symfony/filesystem": "~2.2",
                 "symfony/http-foundation": "~2.2",
                 "symfony/process": "~2.2",
@@ -3000,13 +3001,13 @@
             ],
             "authors": [
                 {
-                    "name": "Thomas Rabaix",
-                    "email": "thomas.rabaix@sonata-project.org",
-                    "homepage": "http://sonata-project.org"
-                },
-                {
                     "name": "Sonata Community",
                     "homepage": "https://github.com/sonata-project/SonataCacheBundle/contributors"
+                },
+                {
+                    "name": "Thomas Rabaix",
+                    "email": "thomas.rabaix@sonata-project.org",
+                    "homepage": "https://sonata-project.org"
                 }
             ],
             "description": "This bundle provides caching services",
@@ -3014,20 +3015,20 @@
             "keywords": [
                 "cache block"
             ],
-            "time": "2014-09-11 08:45:33"
+            "time": "2015-05-18 21:58:53"
         },
         {
             "name": "sonata-project/core-bundle",
-            "version": "2.3.2",
+            "version": "2.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataCoreBundle.git",
-                "reference": "bef29b901730c9ce5af1eac2ec138a29bd1f1d06"
+                "reference": "360942d98ac7441dc9b06b089ef8636721e37f9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/bef29b901730c9ce5af1eac2ec138a29bd1f1d06",
-                "reference": "bef29b901730c9ce5af1eac2ec138a29bd1f1d06",
+                "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/360942d98ac7441dc9b06b089ef8636721e37f9c",
+                "reference": "360942d98ac7441dc9b06b089ef8636721e37f9c",
                 "shasum": ""
             },
             "require": {
@@ -3079,7 +3080,7 @@
             "keywords": [
                 "sonata"
             ],
-            "time": "2015-05-18 10:03:25"
+            "time": "2015-05-18 14:31:37"
         },
         {
             "name": "sonata-project/datagrid-bundle",
@@ -4311,6 +4312,114 @@
             "time": "2015-05-11 01:58:49"
         },
         {
+            "name": "th3mouk/cms-core-bundle",
+            "version": "1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Th3Mouk/CMSCoreBundle.git",
+                "reference": "bd7a13c118641da421383e3fffc047d9d273cbd8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Th3Mouk/CMSCoreBundle/zipball/bd7a13c118641da421383e3fffc047d9d273cbd8",
+                "reference": "bd7a13c118641da421383e3fffc047d9d273cbd8",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/doctrine-fixtures-bundle": "~2.2",
+                "egeloen/ckeditor-bundle": "~2.0",
+                "id4v/menu-bundle": "~1.1",
+                "liip/imagine-bundle": "~1.0",
+                "sonata-project/admin-bundle": "~2.3",
+                "sonata-project/cache-bundle": "~2.2",
+                "sonata-project/doctrine-orm-admin-bundle": "~2.3",
+                "sonata-project/easy-extends-bundle": "~2.1",
+                "sonata-project/intl-bundle": "~2.2",
+                "sonata-project/media-bundle": "~2.3",
+                "sonata-project/notification-bundle": "~2.3",
+                "sonata-project/seo-bundle": "~1.1",
+                "stof/doctrine-extensions-bundle": "~1.1",
+                "th3mouk/cms-page-bundle": "~1.0",
+                "th3mouk/cms-user-bundle": "~2.3@dev",
+                "willdurand/faker-bundle": "~1.2"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Th3Mouk\\CMSCoreBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jérémy Marodon",
+                    "email": "marodon.jeremy@gmail.com"
+                }
+            ],
+            "description": "Symfony CMSCoreBundle extends of Sonata Project",
+            "keywords": [
+                "cms",
+                "core",
+                "sonata"
+            ],
+            "time": "2015-05-18 13:28:30"
+        },
+        {
+            "name": "th3mouk/cms-page-bundle",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Th3Mouk/CMSPageBundle.git",
+                "reference": "c713f1b3d8baae96f06bffa59723331dc8f7030a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Th3Mouk/CMSPageBundle/zipball/c713f1b3d8baae96f06bffa59723331dc8f7030a",
+                "reference": "c713f1b3d8baae96f06bffa59723331dc8f7030a",
+                "shasum": ""
+            },
+            "require": {
+                "sonata-project/datagrid-bundle": "2.2.*@dev",
+                "sonata-project/page-bundle": "~2.3"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Th3Mouk\\CMSPageBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jérémy Marodon",
+                    "email": "marodon.jeremy@gmail.com"
+                }
+            ],
+            "description": "Symfony CMSPageBundle extends of Sonata Project",
+            "keywords": [
+                "cms",
+                "page",
+                "sonata"
+            ],
+            "time": "2015-04-15 09:01:18"
+        },
+        {
             "name": "th3mouk/cms-user-bundle",
             "version": "dev-master",
             "source": {
@@ -4634,10 +4743,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "th3mouk/cms-user-bundle": 20,
-        "sonata-project/datagrid-bundle": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
