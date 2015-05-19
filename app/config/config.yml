@@ -49,7 +49,6 @@ twig:
     strict_variables: "%kernel.debug%"
     form:
         resources:
-            - 'SonataFormatterBundle:Form:formatter.html.twig'
             - 'bootstrap_3_layout.html.twig'
 
     exception_controller: 'FOS\RestBundle\Controller\ExceptionController::showAction'
