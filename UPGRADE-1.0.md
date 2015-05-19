@@ -76,6 +76,8 @@ The configuration of IvoryCKEditorBundle no longer part of default Core configur
 ``` yaml
 # Add this line in app/config/config.yml
  - { resource: @Th3MoukCMSCoreBundle/Resources/config/bundles/ivory_ckeditor.yml }
+# Remove this
+ - 'SonataFormatterBundle:Form:formatter.html.twig'
 ```
 
 ### __Graphic__
