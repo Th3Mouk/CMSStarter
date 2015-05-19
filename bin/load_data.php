@@ -18,6 +18,7 @@ $rootDir = __DIR__ . '/..';
 require_once __DIR__ . '/../app/bootstrap.php.cache';
 
 use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Console\Output\ConsoleOutput;
 
 // reset data
 $fs = new \Symfony\Component\Filesystem\Filesystem;
@@ -35,7 +36,7 @@ if (!is_file(__DIR__.'/../app/config/parameters.yml')) {
  *
  * @return boolean
  */
-function execute_commands($commands, $output)
+function execute_commands($commands, ConsoleOutput $output)
 {
     foreach($commands as $command) {
         $output->writeln(sprintf('<info>Executing : </info> %s', $command));
