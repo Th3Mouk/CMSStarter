@@ -4,26 +4,22 @@
     "type": "project",
     "description": "CMS ready to clone on top of Sonata Project & Symfony2",
     "autoload": {
-        "psr-0": {
-            "": "src/",
-            "SymfonyStandard": "app/"
-        }
+        "psr-4": { "": "src/", "SymfonyStandard\\": "app/SymfonyStandard/" }
     },
     "require": {
-        "php": ">=5.3.3",
-        "symfony/symfony": "2.6.*",
+        "php": ">=5.3.9",
+        "symfony/symfony": "2.7.*",
         "symfony/assetic-bundle": "~2.3",
         "symfony/swiftmailer-bundle": "~2.3",
         "symfony/monolog-bundle": "~2.4",
 
-        "twig/extensions": "~1.0",
-        "sensio/distribution-bundle": "~3.0,>=3.0.12",
+        "sensio/distribution-bundle": "~4.0",
         "sensio/framework-extra-bundle": "~3.0,>=3.0.2",
         "incenteev/composer-parameter-handler": "~2.0",
 
         "doctrine/orm": "~2.2,>=2.2.3,<2.5",
         "doctrine/dbal": "<2.5",
-        "doctrine/doctrine-bundle": "~1.2",
+        "doctrine/doctrine-bundle": "~1.4",
 
         "th3mouk/cms-core-bundle": "~1.0"
     },
