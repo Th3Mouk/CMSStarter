@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2f897d27f02f35b12b4cb1405b0a3039",
+    "hash": "657254b4bf13db3ca2d6096acc1aee76",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -1308,6 +1308,53 @@
                 "uploadable"
             ],
             "time": "2015-02-24 21:41:37"
+        },
+        {
+            "name": "id4v/menu-bundle",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Id4v/MenuBundle.git",
+                "reference": "6036ca64e9b4756a86636d77643a0cff7f52b2ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Id4v/MenuBundle/zipball/6036ca64e9b4756a86636d77643a0cff7f52b2ad",
+                "reference": "6036ca64e9b4756a86636d77643a0cff7f52b2ad",
+                "shasum": ""
+            },
+            "require": {
+                "gedmo/doctrine-extensions": "2.3.*",
+                "sonata-project/admin-bundle": "~2.3",
+                "stof/doctrine-extensions-bundle": "~1.1"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Id4v\\Bundle\\MenuBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Rimbault",
+                    "email": "rimbault.david@gmail.com"
+                }
+            ],
+            "description": "Menu Bundle that allows you to create menus, and manage them easily",
+            "keywords": [
+                "Menu generator",
+                "menu"
+            ],
+            "time": "2015-06-09 08:18:27"
         },
         {
             "name": "imagine/imagine",
@@ -4236,6 +4283,114 @@
             "time": "2015-06-11 21:15:28"
         },
         {
+            "name": "th3mouk/cms-core-bundle",
+            "version": "1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Th3Mouk/CMSCoreBundle.git",
+                "reference": "bd7a13c118641da421383e3fffc047d9d273cbd8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Th3Mouk/CMSCoreBundle/zipball/bd7a13c118641da421383e3fffc047d9d273cbd8",
+                "reference": "bd7a13c118641da421383e3fffc047d9d273cbd8",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/doctrine-fixtures-bundle": "~2.2",
+                "egeloen/ckeditor-bundle": "~2.0",
+                "id4v/menu-bundle": "~1.1",
+                "liip/imagine-bundle": "~1.0",
+                "sonata-project/admin-bundle": "~2.3",
+                "sonata-project/cache-bundle": "~2.2",
+                "sonata-project/doctrine-orm-admin-bundle": "~2.3",
+                "sonata-project/easy-extends-bundle": "~2.1",
+                "sonata-project/intl-bundle": "~2.2",
+                "sonata-project/media-bundle": "~2.3",
+                "sonata-project/notification-bundle": "~2.3",
+                "sonata-project/seo-bundle": "~1.1",
+                "stof/doctrine-extensions-bundle": "~1.1",
+                "th3mouk/cms-page-bundle": "~1.0",
+                "th3mouk/cms-user-bundle": "~2.3@dev",
+                "willdurand/faker-bundle": "~1.2"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Th3Mouk\\CMSCoreBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jérémy Marodon",
+                    "email": "marodon.jeremy@gmail.com"
+                }
+            ],
+            "description": "Symfony CMSCoreBundle extends of Sonata Project",
+            "keywords": [
+                "cms",
+                "core",
+                "sonata"
+            ],
+            "time": "2015-05-18 13:28:30"
+        },
+        {
+            "name": "th3mouk/cms-page-bundle",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Th3Mouk/CMSPageBundle.git",
+                "reference": "c713f1b3d8baae96f06bffa59723331dc8f7030a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Th3Mouk/CMSPageBundle/zipball/c713f1b3d8baae96f06bffa59723331dc8f7030a",
+                "reference": "c713f1b3d8baae96f06bffa59723331dc8f7030a",
+                "shasum": ""
+            },
+            "require": {
+                "sonata-project/datagrid-bundle": "2.2.*@dev",
+                "sonata-project/page-bundle": "~2.3"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Th3Mouk\\CMSPageBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jérémy Marodon",
+                    "email": "marodon.jeremy@gmail.com"
+                }
+            ],
+            "description": "Symfony CMSPageBundle extends of Sonata Project",
+            "keywords": [
+                "cms",
+                "page",
+                "sonata"
+            ],
+            "time": "2015-04-15 09:01:18"
+        },
+        {
             "name": "th3mouk/cms-user-bundle",
             "version": "dev-master",
             "source": {
@@ -4559,10 +4714,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "th3mouk/cms-user-bundle": 20,
-        "sonata-project/datagrid-bundle": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
