@@ -83,3 +83,11 @@ The configuration of IvoryCKEditorBundle no longer part of default Core configur
 ### __Graphic__
 
 Modification of the Super Admin Block
+
+## 1.0.7
+
+### __Upgrade on Symfony 2.7 LTS__
+
+### __Composer Dependencies__
+
+Resume the file `composer.json [63aaa12](https://github.com/Th3Mouk/CMSStarter/commit/63aaa12ffabf50d099755d1ecd02394117f4f00e)
