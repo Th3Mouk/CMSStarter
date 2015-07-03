@@ -21,7 +21,7 @@
         "doctrine/dbal": "<2.5",
         "doctrine/doctrine-bundle": "~1.4",
 
-        "th3mouk/cms-core-bundle": "~1.0"
+        "th3mouk/cms-core-bundle": "~1.1"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"
