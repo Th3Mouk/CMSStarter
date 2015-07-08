@@ -95,23 +95,49 @@ You must be familiar with [Bower](http://bower.io/) to add dependencies
 bower install
 ```
 
-To re-compile [LESS](http://lesscss.org/) files you need to run 
+#### Style
 
+At each modification of the [LESS](http://lesscss.org/)/CSS, you need
+to re-compile `starter.min.css` file.
+ 
+Run:
 ``` bash
 grunt css
 ```
 
-You can also run and use [LiveReload](http://livereload.com/) for reload browser pages instantly
-
-``` bash
-grunt watch
-```
+This command make 2 tasks in one: (compression and minimization)
 
 __Beware__
 
 This operation overwritte the `web/css/style.css` file.
 
 You need to modify `Gruntfile.js` or LESS files in `app/Resources/public/less` to adapt behaviors on your need.
+
+__LiveReload__
+
+You can also run this task and use [LiveReload](http://livereload.com/) for reload browser pages instantly at each save of LESS file.
+
+``` bash
+grunt watch
+```
+
+This task run in background and recompile `starter.min.css` each time you save a modification of a LESS file,
+in this folder `app/Resources/public/less/`.
+Under the hood `grunt watch` launch `grunt css`.
+
+#### Javascripts
+
+In the same way, this command
+``` bash
+grunt js
+```
+
+Allow to compress and minimize all the javascripts in `starter.min.js`.
+
+#### Tweaks
+
+All modifications, and certainly addition of stylesheets and scripts, can be made in the `Gruntfile.js`.
+
 
 [1]:  https://sonata-project.org/
 [2]:  http://symfony.com/
