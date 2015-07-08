@@ -12,3 +12,9 @@ UPGRADE 1.1
 Important BC Break infos in [Th3MoukCMSCoreBundle](https://github.com/Th3Mouk/CMSCoreBundle/blob/master/UPGRADE-1.1.md#110)
 
 Please follow the instructions to update ~1.0 to ~1.1
+
+## 1.1.1
+
+### __Grunt tasks__
+
+Add minimization of css and javascripts by default [edc0bd9](https://github.com/Th3Mouk/CMSStarter/commit/edc0bd91582b6fae0bdc04bd7e0d05653ce6b9a6)
