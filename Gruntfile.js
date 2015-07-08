@@ -77,10 +77,10 @@ module.exports = function(grunt) {
                 files: [
                     // makes all src relative to cwd
                     {expand: true, cwd: 'bower/bootstrap/dist/fonts/', src: '**', dest: 'web/fonts/'},
-                    {expand: true, cwd: 'bower/bootstrap/dist/js/', src: '**', dest: 'web/js/'},
-                    {expand: true, cwd: 'bower/jquery/dist/', src: '**', dest: 'web/js/'},
+                    {expand: true, cwd: 'bower/bootstrap/dist/js/', src: ['bootstrap.min.js'], dest: 'web/js/'},
+                    {expand: true, cwd: 'bower/jquery/dist/', src: ['jquery.min.js'], dest: 'web/js/'},
                     {expand: true, cwd: 'bower/fontawesome/fonts/', src: '**', dest: 'web/fonts/'},
-                    {expand: true, cwd: 'bower/fontawesome/css/', src: '**', dest: 'web/css/'},
+                    {expand: true, cwd: 'bower/fontawesome/css/', src: ['font-awesome.min.css'], dest: 'web/css/'},
                     {expand: true, cwd: 'bower/jquery-ui/', src: ['jquery-ui.min.js'], dest: 'web/js/'},
                     {expand: true, cwd: 'bower/magnific-popup/dist/', src: ['jquery.magnific-popup.min.js'], dest: 'web/js/'},
                     {expand: true, cwd: 'bower/magnific-popup/dist/', src: ['magnific-popup.css'], dest: 'web/css/'},
