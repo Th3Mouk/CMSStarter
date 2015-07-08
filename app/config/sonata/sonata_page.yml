@@ -75,20 +75,11 @@ sonata_page:
 #            - 'bundles/sonatapage/default.css'
 #            - 'bundles/sonataadmin/vendor/bootstrap/dist/css/bootstrap.min.css'
 #            - 'bundles/sonatapage/sonata-page.front.css'
-            - 'css/style.css'
-            - 'css/magnific-popup.css'
-            - 'css/jquery-ui.min.css'
-            - 'css/hover-min.css'
-            - 'css/font-awesome.min.css'
+            - 'css/starter.min.css'
         javascripts:
 #            - 'bundles/sonataadmin/vendor/jquery/dist/jquery.min.js'
 #            - 'bundles/sonataadmin/vendor/bootstrap/dist/js/bootstrap.min.js'
-            - 'bundles/sonatapage/sonata-page.front.js'
-            - 'js/jquery.min.js'
-            - 'js/jquery-ui.min.js'
-            - 'js/bootstrap.min.js'
-            - 'js/datepicker-trad.js'
-            - 'js/jquery.magnific-popup.min.js'
+            - 'js/starter.min.js'
 
     # manage the http errors
     catch_exceptions:

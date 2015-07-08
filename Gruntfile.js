@@ -6,6 +6,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
     
     //Au cas ou... car on en a besoin
 //    grunt.file.mkdir('app/Resources/public/images/');
@@ -56,13 +58,6 @@ module.exports = function(grunt) {
 //                dest: 'web/built/all.css'
 //            }
         },
-        uglify: {
-            dist: {
-                files: {
-//                    'web/built/app/js/wozbe.min.js': ['web/built/app/js/wozbe.js']
-                }
-            }
-        },
         watch: {
             css: {
                 files: ['app/Resources/public/less/*.less'],
@@ -97,12 +92,36 @@ module.exports = function(grunt) {
 //                    {expand: true, cwd: 'app/Resources/public/', src: '**', dest: 'web/bundles/app/'}
 //                ]
 //            } 
+        },
+        uglify: {
+            options: {
+                compress: {
+                    drop_console: true
+                }
+            },
+            minify: {
+                files: {
+                    'web/js/starter.min.js': ['bundles/sonatapage/sonata-page.front.js', 'web/js/jquery.min.js', 'web/js/jquery-ui.min.js', 'web/js/bootstrap.min.js', 'web/js/datepicker-trad.js', 'web/js/jquery.magnific-popup.min.js']
+                }
+            }
+        },
+        cssmin: {
+            options: {
+                shorthandCompacting: false,
+                roundingPrecision: -1,
+                keepSpecialComments: 0
+            },
+            minify: {
+                src: ['web/css/style.css', 'web/css/magnific-popup.css', 'web/css/jquery-ui.min.css', 'web/css/hover-min.css', 'web/css/font-awesome.min.css'],
+                dest: 'web/css/starter.min.css'
+            }
         }
     });
 
     // Définition des tâches Grunt
     grunt.registerTask('default', ['css']);
-    grunt.registerTask('css', ['less']);
+    grunt.registerTask('css', ['less', 'cssmin']);
+    grunt.registerTask('js', ['uglify']);
     grunt.registerTask('upgrade', ['copy:main']);
     
     
