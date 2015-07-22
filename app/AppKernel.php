@@ -45,6 +45,10 @@ class AppKernel extends Kernel
             // Sonata Page
             new Sonata\PageBundle\SonataPageBundle(),
 
+            // Sonata Formatter
+            new Knp\Bundle\MarkdownBundle\KnpMarkdownBundle(),
+            new Sonata\FormatterBundle\SonataFormatterBundle(),
+
             // CKEditor
             new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
 
