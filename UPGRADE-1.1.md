@@ -18,3 +18,11 @@ Please follow the instructions to update ~1.0 to ~1.1
 ### __Grunt tasks__
 
 Add minimization of css and javascripts by default [edc0bd9](https://github.com/Th3Mouk/CMSStarter/commit/edc0bd91582b6fae0bdc04bd7e0d05653ce6b9a6)
+
+## 1.1.2
+
+### __SonataFormatterBundle__
+
+All modifications to do can be find [here](https://github.com/Th3Mouk/CMSStarter/compare/1.1.1...1.1.2)
+
+The only file to modify is `app/AppKernel.php`
