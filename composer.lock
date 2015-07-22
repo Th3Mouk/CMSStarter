@@ -110,6 +110,66 @@
             "time": "2015-07-02 20:13:51"
         },
         {
+            "name": "dflydev/markdown",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dflydev/dflydev-markdown.git",
+                "reference": "6baed9b50f29c980795b6656d43722aadb126f7e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dflydev/dflydev-markdown/zipball/6baed9b50f29c980795b6656d43722aadb126f7e",
+                "reference": "6baed9b50f29c980795b6656d43722aadb126f7e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "dflydev\\markdown": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Dragonfly Development Inc.",
+                    "email": "info@dflydev.com",
+                    "homepage": "http://dflydev.com"
+                },
+                {
+                    "name": "Beau Simensen",
+                    "email": "beau@dflydev.com",
+                    "homepage": "http://beausimensen.com"
+                },
+                {
+                    "name": "Michel Fortin",
+                    "homepage": "http://michelf.com"
+                },
+                {
+                    "name": "John Gruber",
+                    "homepage": "http://daringfireball.net"
+                }
+            ],
+            "description": "PHP Markdown & Extra",
+            "homepage": "http://github.com/dflydev/dflydev-markdown",
+            "keywords": [
+                "markdown"
+            ],
+            "abandoned": "michelf/php-markdown",
+            "time": "2013-09-23 12:00:18"
+        },
+        {
             "name": "doctrine/annotations",
             "version": "v1.2.6",
             "source": {
@@ -1312,16 +1372,16 @@
         },
         {
             "name": "id4v/menu-bundle",
-            "version": "2.0.0",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Id4v/MenuBundle.git",
-                "reference": "8754c60857c5bf3f50fe6922ca01ab7ae64adf44"
+                "reference": "a03278616b96419835da0d1793c988becd47a401"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Id4v/MenuBundle/zipball/8754c60857c5bf3f50fe6922ca01ab7ae64adf44",
-                "reference": "8754c60857c5bf3f50fe6922ca01ab7ae64adf44",
+                "url": "https://api.github.com/repos/Id4v/MenuBundle/zipball/a03278616b96419835da0d1793c988becd47a401",
+                "reference": "a03278616b96419835da0d1793c988becd47a401",
                 "shasum": ""
             },
             "require": {
@@ -1360,7 +1420,7 @@
                 "Menu generator",
                 "menu"
             ],
-            "time": "2015-07-03 11:09:02"
+            "time": "2015-07-07 12:51:30"
         },
         {
             "name": "imagine/imagine",
@@ -1832,6 +1892,65 @@
             "time": "2015-03-09 08:06:57"
         },
         {
+            "name": "knplabs/knp-markdown-bundle",
+            "version": "1.2.0",
+            "target-dir": "Knp/Bundle/MarkdownBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KnpLabs/KnpMarkdownBundle.git",
+                "reference": "9f4f88919db4f4b7f8e374ac0de1a93e05b05646"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KnpLabs/KnpMarkdownBundle/zipball/9f4f88919db4f4b7f8e374ac0de1a93e05b05646",
+                "reference": "9f4f88919db4f4b7f8e374ac0de1a93e05b05646",
+                "shasum": ""
+            },
+            "require": {
+                "dflydev/markdown": "1.0.*@dev",
+                "php": ">=5.3.3",
+                "symfony/framework-bundle": "~2.0"
+            },
+            "suggest": {
+                "ext-sundown": "to use optional support for php-sundown extension instead of php implementation",
+                "symfony/twig-bundle": "to use the Twig markdown filter"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Knp\\Bundle\\MarkdownBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "KnpLabs Team",
+                    "homepage": "http://knplabs.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://github.com/KnpLabs/KnpMarkdownBundle/contributors"
+                }
+            ],
+            "description": "Knplabs markdown bundle transforms markdown into html",
+            "homepage": "http://github.com/KnpLabs/KnpMarkdownBundle",
+            "keywords": [
+                "bundle",
+                "knp",
+                "knplabs",
+                "markdown"
+            ],
+            "time": "2013-05-20 08:29:54"
+        },
+        {
             "name": "knplabs/knp-menu",
             "version": "v2.0.1",
             "source": {
@@ -2199,16 +2318,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.14.0",
+            "version": "1.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "b287fbbe1ca27847064beff2bad7fb6920bf08cc"
+                "reference": "dc5150cc608f2334c72c3b6a553ec9668a4156b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/b287fbbe1ca27847064beff2bad7fb6920bf08cc",
-                "reference": "b287fbbe1ca27847064beff2bad7fb6920bf08cc",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/dc5150cc608f2334c72c3b6a553ec9668a4156b0",
+                "reference": "dc5150cc608f2334c72c3b6a553ec9668a4156b0",
                 "shasum": ""
             },
             "require": {
@@ -2245,7 +2364,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.14.x-dev"
+                    "dev-master": "1.15.x-dev"
                 }
             },
             "autoload": {
@@ -2271,7 +2390,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2015-06-19 13:29:54"
+            "time": "2015-07-12 13:54:09"
         },
         {
             "name": "nelmio/api-doc-bundle",
@@ -3046,12 +3165,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataDatagridBundle.git",
-                "reference": "f3be409a041083c852af160bdbf2225461f4c69b"
+                "reference": "fec0147e99b3db467152d148126e2f894c9369a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataDatagridBundle/zipball/f3be409a041083c852af160bdbf2225461f4c69b",
-                "reference": "f3be409a041083c852af160bdbf2225461f4c69b",
+                "url": "https://api.github.com/repos/sonata-project/SonataDatagridBundle/zipball/fec0147e99b3db467152d148126e2f894c9369a2",
+                "reference": "fec0147e99b3db467152d148126e2f894c9369a2",
                 "shasum": ""
             },
             "require": {
@@ -3095,7 +3214,7 @@
                 "datagrid",
                 "sonata"
             ],
-            "time": "2015-06-26 10:13:20"
+            "time": "2015-07-07 10:54:34"
         },
         {
             "name": "sonata-project/doctrine-extensions",
@@ -3335,6 +3454,68 @@
                 "xls"
             ],
             "time": "2015-06-29 18:36:46"
+        },
+        {
+            "name": "sonata-project/formatter-bundle",
+            "version": "2.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sonata-project/SonataFormatterBundle.git",
+                "reference": "e370b324b083f064bea53f99f0cd4da037abbf8c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sonata-project/SonataFormatterBundle/zipball/e370b324b083f064bea53f99f0cd4da037abbf8c",
+                "reference": "e370b324b083f064bea53f99f0cd4da037abbf8c",
+                "shasum": ""
+            },
+            "require": {
+                "egeloen/ckeditor-bundle": "~2.2",
+                "knplabs/knp-markdown-bundle": "~1.2.0",
+                "sonata-project/block-bundle": "~2.2,>=2.2.1",
+                "sonata-project/core-bundle": "~2.2",
+                "symfony/symfony": "~2.3",
+                "twig/twig": "*"
+            },
+            "require-dev": {
+                "sonata-project/markitup-bundle": "~2.1"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sonata\\FormatterBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Rabaix",
+                    "email": "thomas.rabaix@sonata-project.org",
+                    "homepage": "http://sonata-project.org"
+                },
+                {
+                    "name": "Sonata Community",
+                    "homepage": "https://github.com/sonata-project/SonataFormatterBundle/contributors"
+                }
+            ],
+            "description": "Symfony SonataFormatterBundle",
+            "homepage": "http://sonata-project.org/bundles/formatter",
+            "keywords": [
+                "CKEditor",
+                "formatter",
+                "markdown",
+                "markitup",
+                "sonata"
+            ],
+            "time": "2014-12-18 15:55:02"
         },
         {
             "name": "sonata-project/google-authenticator",
@@ -4168,16 +4349,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.7.1",
+            "version": "v2.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "932b6e7499c670f4db6d0b871477a4a3ca161e74"
+                "reference": "969d709ad428076bf1084e386dc26dd904d9fb84"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/932b6e7499c670f4db6d0b871477a4a3ca161e74",
-                "reference": "932b6e7499c670f4db6d0b871477a4a3ca161e74",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/969d709ad428076bf1084e386dc26dd904d9fb84",
+                "reference": "969d709ad428076bf1084e386dc26dd904d9fb84",
                 "shasum": ""
             },
             "require": {
@@ -4286,20 +4467,20 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2015-06-11 21:15:28"
+            "time": "2015-07-13 19:27:49"
         },
         {
             "name": "th3mouk/cms-core-bundle",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Th3Mouk/CMSCoreBundle.git",
-                "reference": "ac6f2355082ecec0709bcf34b62293ca74b4e559"
+                "reference": "7f46b9e742fb6d7ea9b8ee22f2735cd17f8b50a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Th3Mouk/CMSCoreBundle/zipball/ac6f2355082ecec0709bcf34b62293ca74b4e559",
-                "reference": "ac6f2355082ecec0709bcf34b62293ca74b4e559",
+                "url": "https://api.github.com/repos/Th3Mouk/CMSCoreBundle/zipball/7f46b9e742fb6d7ea9b8ee22f2735cd17f8b50a6",
+                "reference": "7f46b9e742fb6d7ea9b8ee22f2735cd17f8b50a6",
                 "shasum": ""
             },
             "require": {
@@ -4311,6 +4492,7 @@
                 "sonata-project/cache-bundle": "~2.2",
                 "sonata-project/doctrine-orm-admin-bundle": "~2.3",
                 "sonata-project/easy-extends-bundle": "~2.1",
+                "sonata-project/formatter-bundle": "~2.3",
                 "sonata-project/intl-bundle": "~2.2",
                 "sonata-project/media-bundle": "~2.3",
                 "sonata-project/notification-bundle": "~2.3",
@@ -4347,7 +4529,7 @@
                 "core",
                 "sonata"
             ],
-            "time": "2015-07-03 12:19:50"
+            "time": "2015-07-22 12:57:42"
         },
         {
             "name": "th3mouk/cms-page-bundle",
