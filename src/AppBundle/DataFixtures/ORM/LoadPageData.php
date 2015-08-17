@@ -1244,12 +1244,10 @@ CONTENT
      * @param SiteInterface $site      A Site entity instance
      * @param string        $url       A page URL
      * @param string        $title     A page title
-     * @param bool          $directory This is a folder for page (non clickable menu)
-     * @param bool          $menu      The page do appear in the menu
      * @param string        $parent    The reference of parent page
      * @param string        $content   A text content
      */
-    public function createTextSiraPage(SiteInterface $site, $url, $title, $directory, $menu, $parent, $color, $content)
+    public function createTextPage(SiteInterface $site, $url, $title, $parent, $content)
     {
         $pageManager = $this->getPageManager();
         $blockManager = $this->getBlockManager();
@@ -1266,8 +1264,6 @@ CONTENT
         $page->setTemplateCode('default');
         $page->setRouteName('page_slug');
         $page->setSite($site);
-        $page->setDirectory($directory);
-        $page->setDisplayMenu($menu);
         $page->setParent($this->getReference($parent));
 
         $page->addBlocks($block = $blockInteractor->createNewContainer(array(
@@ -1293,9 +1289,8 @@ CONTENT
 
         // Add text content block
         $block->addChildren($text = $blockManager->create());
-        $text->setType('sira.block.contenu.simple');
+        $text->setType('cms.block.contenu.ckeditor');
         $text->setSetting('contenu', sprintf('%s', $content));
-        $text->setSetting('couleur', sprintf('%s', $color));
         $text->setPosition(0);
         $text->setEnabled(true);
         $text->setPage($page);
