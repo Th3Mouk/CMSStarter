@@ -58,6 +58,15 @@ __That's all folks !__
 
 Your project is now fully installed, and functional.
 
+## Update CMSStarter
+
+Only one solution is advised to easily update your project: `cherry pick`
+
+You need to have a remote on your subversion, directly on this repository.
+Call it maybe (=D), updates and checkout the master branch.
+
+When there is new releases you have the choice : merging or cherry picking into your project.
+
 ## Configuration
 
 ### CKEditor
