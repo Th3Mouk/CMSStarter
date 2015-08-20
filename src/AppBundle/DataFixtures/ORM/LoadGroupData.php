@@ -19,7 +19,7 @@ class LoadGroupData extends AbstractFixture implements FixtureInterface, Ordered
     private $container;
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getOrder()
     {
@@ -27,7 +27,7 @@ class LoadGroupData extends AbstractFixture implements FixtureInterface, Ordered
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function setContainer(ContainerInterface $container = null)
     {

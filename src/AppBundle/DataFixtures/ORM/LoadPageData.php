@@ -6,7 +6,6 @@
  * Date: 28/01/15
  * Time: 17:14.
  */
-
 namespace AppBundle\DataFixtures\ORM;
 
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
@@ -25,7 +24,7 @@ class LoadPageData extends AbstractFixture implements ContainerAwareInterface, O
     private $container;
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getOrder()
     {
@@ -33,7 +32,7 @@ class LoadPageData extends AbstractFixture implements ContainerAwareInterface, O
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function setContainer(ContainerInterface $container = null)
     {
@@ -772,8 +771,8 @@ CONTENT
 
         $page->addBlocks($block = $blockInteractor->createNewContainer(array(
             'enabled' => true,
-            'page'    => $page,
-            'code'    => 'content_top',
+            'page' => $page,
+            'code' => 'content_top',
         )));
 
         // add the breadcrumb
@@ -812,8 +811,8 @@ CONTENT
 
         $page->addBlocks($block = $blockInteractor->createNewContainer(array(
             'enabled' => true,
-            'page'    => $page,
-            'code'    => 'content_top',
+            'page' => $page,
+            'code' => 'content_top',
         )));
 
         // add the breadcrumb
@@ -852,8 +851,8 @@ CONTENT
 
         $page->addBlocks($block = $blockInteractor->createNewContainer(array(
             'enabled' => true,
-            'page'    => $page,
-            'code'    => 'content_top',
+            'page' => $page,
+            'code' => 'content_top',
         )));
 
         // add the breadcrumb
@@ -956,8 +955,8 @@ CONTENT
 
         $global->addBlocks($footer = $blockInteractor->createNewContainer(array(
             'enabled' => true,
-            'page'    => $global,
-            'code'    => 'footer',
+            'page' => $global,
+            'code' => 'footer',
         ), function ($container) {
             $container->setSetting('layout', '<div class="row page-footer well">{{ CONTENT }}</div>');
         }));
@@ -967,32 +966,32 @@ CONTENT
         // Footer : add 3 children block containers (left, center, right)
         $footer->addChildren($footerLeft = $blockInteractor->createNewContainer(array(
             'enabled' => true,
-            'page'    => $global,
-            'code'    => 'content',
+            'page' => $global,
+            'code' => 'content',
         ), function ($container) {
             $container->setSetting('layout', '<div class="col-sm-3">{{ CONTENT }}</div>');
         }));
 
         $footer->addChildren($footerLinksLeft = $blockInteractor->createNewContainer(array(
             'enabled' => true,
-            'page'    => $global,
-            'code'    => 'content',
+            'page' => $global,
+            'code' => 'content',
         ), function ($container) {
             $container->setSetting('layout', '<div class="col-sm-2 col-sm-offset-3">{{ CONTENT }}</div>');
         }));
 
         $footer->addChildren($footerLinksCenter = $blockInteractor->createNewContainer(array(
             'enabled' => true,
-            'page'    => $global,
-            'code'    => 'content',
+            'page' => $global,
+            'code' => 'content',
         ), function ($container) {
             $container->setSetting('layout', '<div class="col-sm-2">{{ CONTENT }}</div>');
         }));
 
         $footer->addChildren($footerLinksRight = $blockInteractor->createNewContainer(array(
             'enabled' => true,
-            'page'    => $global,
-            'code'    => 'content',
+            'page' => $global,
+            'code' => 'content',
         ), function ($container) {
             $container->setSetting('layout', '<div class="col-sm-2">{{ CONTENT }}</div>');
         }));
@@ -1149,8 +1148,8 @@ CONTENT
         // Add homepage bottom container
         $homepage->addBlocks($bottom = $blockInteractor->createNewContainer(array(
             'enabled' => true,
-            'page'    => $homepage,
-            'code'    => 'content_bottom',
+            'page' => $homepage,
+            'code' => 'content_bottom',
         ), function ($container) {
             $container->setSetting('layout', '{{ CONTENT }}');
         }));
@@ -1217,8 +1216,8 @@ CONTENT
 
         $page->addBlocks($block = $blockInteractor->createNewContainer(array(
             'enabled' => true,
-            'page'    => $page,
-            'code'    => 'content_top',
+            'page' => $page,
+            'code' => 'content_top',
         )));
 
         // add the breadcrumb
@@ -1241,11 +1240,11 @@ CONTENT
     /**
      * Creates simple content pages.
      *
-     * @param SiteInterface $site      A Site entity instance
-     * @param string        $url       A page URL
-     * @param string        $title     A page title
-     * @param string        $parent    The reference of parent page
-     * @param string        $content   A text content
+     * @param SiteInterface $site    A Site entity instance
+     * @param string        $url     A page URL
+     * @param string        $title   A page title
+     * @param string        $parent  The reference of parent page
+     * @param string        $content A text content
      */
     public function createTextPage(SiteInterface $site, $url, $title, $parent, $content)
     {
@@ -1268,8 +1267,8 @@ CONTENT
 
         $page->addBlocks($block = $blockInteractor->createNewContainer(array(
             'enabled' => true,
-            'page'    => $page,
-            'code'    => 'content_top',
+            'page' => $page,
+            'code' => 'content_top',
         ), function ($container) {
             $container->setSetting('layout', '<div class="row">{{ CONTENT }}</div>');
         }));
@@ -1283,8 +1282,8 @@ CONTENT
 
         $page->addBlocks($block = $blockInteractor->createNewContainer(array(
             'enabled' => true,
-            'page'    => $page,
-            'code'    => 'content',
+            'page' => $page,
+            'code' => 'content',
         )));
 
         // Add text content block

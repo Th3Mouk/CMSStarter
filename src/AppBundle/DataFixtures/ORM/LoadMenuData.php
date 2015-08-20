@@ -6,7 +6,6 @@
  * Date: 29/01/15
  * Time: 16:54.
  */
-
 namespace AppBundle\DataFixtures\ORM;
 
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
@@ -25,7 +24,7 @@ class LoadMenuData extends AbstractFixture implements ContainerAwareInterface, O
     private $container;
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getOrder()
     {
@@ -33,7 +32,7 @@ class LoadMenuData extends AbstractFixture implements ContainerAwareInterface, O
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function setContainer(ContainerInterface $container = null)
     {

@@ -28,7 +28,7 @@ class LoadMediaData extends AbstractFixture implements ContainerAwareInterface, 
     private $container;
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getOrder()
     {
@@ -36,7 +36,7 @@ class LoadMediaData extends AbstractFixture implements ContainerAwareInterface, 
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function setContainer(ContainerInterface $container = null)
     {
