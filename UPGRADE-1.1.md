@@ -26,3 +26,11 @@ Add minimization of css and javascripts by default [edc0bd9](https://github.com/
 All modifications to do can be find [here](https://github.com/Th3Mouk/CMSStarter/compare/1.1.1...1.1.2)
 
 The only file to modify is `app/AppKernel.php`
+
+## 1.1.3
+
+### __VichUploaderBundle__
+
+All modifications to do can be find [here](https://github.com/Th3Mouk/CMSStarter/compare/1.1.2...1.1.3)
+
+The merging / cherry picking method is advised for updating the CMSStarter [see](https://github.com/Th3Mouk/CMSStarter#update-cmsstarter)
