@@ -65,6 +65,9 @@ class AppKernel extends Kernel
             // Doctrine Extension
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
 
+            // Uploads
+            new \Vich\UploaderBundle\VichUploaderBundle(),
+
             // API
             new FOS\RestBundle\FOSRestBundle(),
             new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
