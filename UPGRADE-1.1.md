@@ -34,3 +34,7 @@ The only file to modify is `app/AppKernel.php`
 All modifications to do can be find [here](https://github.com/Th3Mouk/CMSStarter/compare/1.1.2...1.1.3)
 
 The merging / cherry picking method is advised for updating the CMSStarter [see](https://github.com/Th3Mouk/CMSStarter#update-cmsstarter)
+
+## 1.1.4
+
+Change extend layout of sonata to add features (Th3MoukCMSCoreBundle::sonata_layout.html.twig)
