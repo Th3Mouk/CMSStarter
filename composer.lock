@@ -4550,16 +4550,16 @@
         },
         {
             "name": "th3mouk/cms-core-bundle",
-            "version": "1.1.4",
+            "version": "1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Th3Mouk/CMSCoreBundle.git",
-                "reference": "5ed8580bf45b456d2c89d3be91a891469616c62e"
+                "reference": "3958013ebe531807adb447bc04c4aeb8e2bf633b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Th3Mouk/CMSCoreBundle/zipball/5ed8580bf45b456d2c89d3be91a891469616c62e",
-                "reference": "5ed8580bf45b456d2c89d3be91a891469616c62e",
+                "url": "https://api.github.com/repos/Th3Mouk/CMSCoreBundle/zipball/3958013ebe531807adb447bc04c4aeb8e2bf633b",
+                "reference": "3958013ebe531807adb447bc04c4aeb8e2bf633b",
                 "shasum": ""
             },
             "require": {
@@ -4609,7 +4609,7 @@
                 "core",
                 "sonata"
             ],
-            "time": "2015-09-01 13:30:09"
+            "time": "2015-09-02 08:31:48"
         },
         {
             "name": "th3mouk/cms-page-bundle",
