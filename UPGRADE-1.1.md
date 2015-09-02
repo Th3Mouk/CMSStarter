@@ -38,3 +38,14 @@ The merging / cherry picking method is advised for updating the CMSStarter [see]
 ## 1.1.4
 
 Change extend layout of sonata to add features (Th3MoukCMSCoreBundle::sonata_layout.html.twig)
+
+## 1.1.5
+
+Clean of files in app/Resources
+
+Sonata layout extend `extend_layout.html.twig` is now deletable in same time of :
+```
+sonata_admin:
+    templates:
+        layout:  SonataAdminBundle::extend_layout.html.twig
+```
