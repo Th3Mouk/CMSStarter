@@ -27,7 +27,7 @@ sonata_media:
             directory:  %kernel.root_dir%/../web/uploads/media
             create:     false
     pixlr:
-        enabled:  true
+        enabled:  false
         secret:   %pixlr_secret%
         referrer: CMS Starter
     providers:
