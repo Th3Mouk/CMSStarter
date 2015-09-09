@@ -1,9 +1,6 @@
 imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
-    - { resource: services.yml }
-
-    # Conf Tiers Bundles
 
     # Sonata CMS Include Default Conf
     - { resource: @Th3MoukCMSCoreBundle/Resources/config/config.yml }
