@@ -21,6 +21,11 @@ imports:
     # Override Vendors Parameters
     - { resource: bundles/override.yml }
 
+# Put parameters here that don't need to change on each machine where the app is deployed
+# http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
+parameters:
+    locale: fr
+
 framework:
     #esi:             ~
     translator:      { fallback: "%locale%" }
@@ -31,6 +36,7 @@ framework:
     form:            ~
     csrf_protection: ~
     validation:      { enable_annotations: true }
+    #serializer:      { enable_annotations: true }
     templating:
         engines: ['twig']
         #assets_version: SomeVersionScheme
@@ -74,7 +80,7 @@ doctrine:
 
         connections:
             default:
-                driver:   %database_driver%
+                driver:   pdo_mysql
                 dbname:   %database_name%
                 host:     %database_host%
                 port:     %database_port%
