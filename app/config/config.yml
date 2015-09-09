@@ -53,12 +53,6 @@ framework:
 twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
-    form:
-        resources:
-            - 'bootstrap_3_layout.html.twig'
-
-    exception_controller: 'FOS\RestBundle\Controller\ExceptionController::showAction'
-    base_template_class: Sonata\CacheBundle\Twig\TwigTemplate14
 
 # Assetic Configuration
 assetic:
@@ -88,8 +82,6 @@ doctrine:
                 password: %database_password%
                 charset:  UTF8
 
-        types:
-            json: Sonata\Doctrine\Types\JsonType
         # if using pdo_sqlite as your database driver:
         #   1. add the path in parameters.yml
         #     e.g. database_path: "%kernel.root_dir%/data/data.db3"
