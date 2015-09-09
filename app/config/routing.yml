@@ -1,3 +1,7 @@
+app:
+    resource: @AppBundle/Controller/
+    type:     annotation
+
 th3_mouk_cms_page:
     resource: "@Th3MoukCMSPageBundle/Resources/config/routing.yml"
     prefix:   /
@@ -5,10 +9,6 @@ th3_mouk_cms_page:
 th3_mouk_cms_core:
     resource: "@Th3MoukCMSCoreBundle/Resources/config/routing.yml"
     prefix:   /
-
-app:
-    resource: @AppBundle/Controller/
-    type:     annotation
 
 gallery:
     resource: '@SonataMediaBundle/Resources/config/routing/gallery.xml'
