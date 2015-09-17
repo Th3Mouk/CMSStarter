@@ -4,7 +4,7 @@ sonata_admin:
     dashboard:
         blocks:
             - { position: left, type: sonata.admin.block.admin_list, settings: { groups: [sonata.admin.group.content] }}
-            - { position: right, type: sonata.admin.block.admin_list, settings: { groups: [sonata.admin.group.administration, sonata.admin.group.administration.super] }}
+            - { position: right, type: sonata.admin.block.admin_list, settings: { groups: [sonata.admin.group.users, sonata.admin.group.administration.super] }}
             - { position: top, type: sonata.block.service.text, class: col-md-12, settings: { content: "<div class='panel panel-default'><div class='panel-heading'><h3 class='panel-title'>Bienvenue !</h3></div><div class='panel-body'>Sur votre nouvelle interface d'administration, propulsée par Overscan et Symfony2.</div></div>"} }
 
         groups:
