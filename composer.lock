@@ -4558,12 +4558,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Th3Mouk/CMSCoreBundle.git",
-                "reference": "224aa25bb2b902aa6eeef8f632437d8940ef7b5a"
+                "reference": "f7d3b9e9e1b7847709350881d12cca2b589aa83c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Th3Mouk/CMSCoreBundle/zipball/224aa25bb2b902aa6eeef8f632437d8940ef7b5a",
-                "reference": "224aa25bb2b902aa6eeef8f632437d8940ef7b5a",
+                "url": "https://api.github.com/repos/Th3Mouk/CMSCoreBundle/zipball/f7d3b9e9e1b7847709350881d12cca2b589aa83c",
+                "reference": "f7d3b9e9e1b7847709350881d12cca2b589aa83c",
                 "shasum": ""
             },
             "require": {
@@ -4614,7 +4614,7 @@
                 "sonata",
                 "symfony"
             ],
-            "time": "2015-10-06 09:53:47"
+            "time": "2015-10-06 10:09:24"
         },
         {
             "name": "th3mouk/cms-page-bundle",
