@@ -112,7 +112,7 @@ module.exports = function(grunt) {
                 keepSpecialComments: 0
             },
             minify: {
-                src: ['web/css/style.css', 'web/css/magnific-popup.css', 'web/css/jquery-ui.min.css', 'web/css/hover-min.css', 'web/css/font-awesome.min.css', 'web/bundles/th3moukcmscore/css/sonata.vich-uploader.css'],
+                src: ['web/css/style.css', 'web/css/magnific-popup.css', 'web/css/jquery-ui.min.css', 'web/css/hover-min.css', 'web/css/font-awesome.min.css'],
                 dest: 'web/css/starter.min.css'
             }
         }
