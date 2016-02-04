@@ -46,29 +46,29 @@ sonata_page:
                     C: content
                     B: content_bottom
 
-#        2columns:
-#            path: 'SonataPageBundle::2columns_layout.html.twig'
-#            name: '2 columns'
-#            containers:
-#                content_top:
-#                    name: Contenu supérieur
-#                content_left:
-#                    name: Contenu gauche
-#                content_right:
-#                    name: Contenu droit
-#                content_bottom:
-#                    name: Contenu inférieur
-#            matrix:
-#                layout: |
-#                    TTTTTTTT
-#                    LLLLRRRR
-#                    BBBBBBBB
-#
-#                mapping:
-#                    T: content_top
-#                    L: content_left
-#                    R: content_right
-#                    B: content_bottom
+        2columns:
+            path: 'SonataPageBundle::2columns_layout.html.twig'
+            name: '2 columns'
+            containers:
+                content_top:
+                    name: Contenu supérieur
+                content_left:
+                    name: Contenu gauche
+                content_right:
+                    name: Contenu droit
+                content_bottom:
+                    name: Contenu inférieur
+            matrix:
+                layout: |
+                    TTTTTTTT
+                    LLLLRRRR
+                    BBBBBBBB
+
+                mapping:
+                    T: content_top
+                    L: content_left
+                    R: content_right
+                    B: content_bottom
 
     assets:
         stylesheets:
