@@ -1,22 +1,22 @@
 {
-  "name": "th3mouk_cms_starter",
-  "version": "1.2.5",
-  "authors": [
-    "Jérémy Marodon <marodon.jeremy@gmail.com>"
-  ],
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "bower",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "bootstrap": "^3.3",
-    "fontawesome": "^4.3",
-    "jquery-ui": "^1.11",
-    "magnific-popup": "^1.1",
-    "hover": "^2.0"
-  }
+    "name": "th3mouk_cms_starter",
+    "version": "2.0.0",
+    "authors": [
+        "Jérémy Marodon <marodon.jeremy@gmail.com>"
+    ],
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "bower",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "bootstrap": "^3.3",
+        "fontawesome": "^4.5",
+        "jquery-ui": "^1.11",
+        "magnific-popup": "^1.1",
+        "hover": "^2.0"
+    }
 }

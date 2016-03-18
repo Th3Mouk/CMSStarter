@@ -63,7 +63,7 @@ module.exports = function(grunt) {
                 keepSpecialComments: 0
             },
             minify: {
-                src: ['web/css/style.css', 'web/css/magnific-popup.css', 'web/css/jquery-ui.min.css', 'web/css/hover-min.css', 'web/css/font-awesome.min.css'],
+                src: ['bundles/sonatapage/sonata-page.front.css', 'web/css/style.css', 'web/css/magnific-popup.css', 'web/css/jquery-ui.min.css', 'web/css/hover-min.css', 'web/css/font-awesome.min.css'],
                 dest: 'web/css/starter.min.css'
             }
         }
@@ -73,5 +73,5 @@ module.exports = function(grunt) {
     grunt.registerTask('default', ['css']);
     grunt.registerTask('css', ['less', 'cssmin']);
     grunt.registerTask('js', ['uglify']);
-    grunt.registerTask('upgrade', ['copy:main']);
+    grunt.registerTask('pull', ['copy:main']);
 };

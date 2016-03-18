@@ -55,6 +55,8 @@ class AppKernel extends Kernel
             // Sonata Media
             new Sonata\MediaBundle\SonataMediaBundle(),
             new Application\Sonata\MediaBundle\ApplicationSonataMediaBundle(),
+            new Sonata\ClassificationBundle\SonataClassificationBundle(),
+            new Application\Sonata\ClassificationBundle\ApplicationSonataClassificationBundle(),
             new JMS\SerializerBundle\JMSSerializerBundle(),
             new Liip\ImagineBundle\LiipImagineBundle(),
 
@@ -66,11 +68,7 @@ class AppKernel extends Kernel
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
 
             // Uploads
-            new \Vich\UploaderBundle\VichUploaderBundle(),
-
-            // API
-            new FOS\RestBundle\FOSRestBundle(),
-            new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
+            new Vich\UploaderBundle\VichUploaderBundle(),
 
             // Menu
             new Id4v\Bundle\MenuBundle\Id4vMenuBundle(),

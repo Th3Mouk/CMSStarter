@@ -1282,7 +1282,7 @@ CONTENT
 
         // Add text content block
         $block->addChildren($text = $blockManager->create());
-        $text->setType('cms.block.contenu.ckeditor');
+        $text->setType('cms.block.ckeditor');
         $text->setSetting('contenu', sprintf('%s', $content));
         $text->setPosition(0);
         $text->setEnabled(true);
