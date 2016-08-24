@@ -72,6 +72,7 @@ class AppKernel extends Kernel
 
             // Menu
             new Id4v\Bundle\MenuBundle\Id4vMenuBundle(),
+            new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
 
             // CMS Starter
             new Th3Mouk\CMSCoreBundle\Th3MoukCMSCoreBundle(),
