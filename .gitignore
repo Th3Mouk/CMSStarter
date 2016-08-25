@@ -37,10 +37,6 @@
 # Composer PHAR
 /composer.phar
 
-# PHPStorm
-/.idea/
-/nbproject/
-
 # Grunt/Bower
 /node_modules/
 /bower/
